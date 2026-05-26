@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"Эльдар Рагимов" — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+  <!-- Шум -->
+  <div class="noise"></div>
+
+  <!-- Навигация -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">ER<span class="dot">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">Стек</a></li>
+      <li><a href="#approach">Подход</a></li>
+      <li><a href="#cases">Кейсы</a></li>
+      <li><a href="#contact">Контакт</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Главная -->
+  <section class="hero">
+    <div class="hero__bg-text" aria-hidden="true">DEV</div>
+    <div class="hero__content">
+      <div class="hero__label">Fullstack Developer</div>
+      <h1 class="hero__name">
+        <span class="hero__name-first">Эльдар</span>
+        <span class="hero__name-last">Рагимов</span>
+      </h1>
+      <p class="hero__desc">
+        Строю сайты, которые работают — быстро, чисто и с вниманием к деталям.
+        TypeScript, React, NodeJS + ИИ-инструменты в ежедневной работе.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary">Написать мне</a>
+        <a href="#cases" class="btn btn--ghost">Кейсы</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Обо мне / Стек -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">01 — Стек и опыт</div>
+      <h2 class="section-title">Чем работаю</h2>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>Опыт разработки на фриланс бирже. Специализируюсь на создание сайтах, дизайн-системах и интеграции ИИ-функциональности в продукты.</p>
+          <p>Умею читать и писать TypeScript, понимаю некоторые аспекты работы с этим языком</p>
+          <div class="about__exp-row">
+            <div class="about__exp-item">
+              <span class="exp-num">1+</span>
+              <span class="exp-label">год практики</span>
+            </div>
+            <div class="about__exp-item">
+              <span class="exp-num">100%</span>
+              <span class="exp-label">Навыки</span>
+            </div>
+            <div class="about__exp-item">
+              <span class="exp-num">TS</span>
+              <span class="exp-label">В основе кода</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__stack">
+          <div class="stack-group">
+            <div class="stack-group__title">Frontend</div>
+            <div class="stack-tags">
+              <span class="tag">TS/JS</span>
+              <span class="tag">React</span>
+              <span class="tag">SCSS/CSS</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Адаптив</span>
+              <span class="tag">Кроссбраузерность</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <div class="stack-group__title">Backend</div>
+            <div class="stack-tags">
+              <span class="tag">NodeJS</span>
+              <span class="tag">Express</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">RestAPI</span>
+            </div>
+          </div>
+          <div class="stack-group">
+            <div class="stack-group__title">ИИ-инструменты</div>
+            <div class="stack-tags">
+              <span class="tag tag--ai">Claude</span>
+              <span class="tag tag--ai">OpenAI</span>
+              <span class="tag tag--ai">Gemini</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подход -->
+  <section class="approach" id="approach">
+    <div class="container">
+      <div class="section-label">02 — Как работаю</div>
+      <h2 class="section-title">Подход к задачам</h2>
+
+      <div class="approach__grid">
+        <div class="approach__card">
+          <div class="approach__num">01</div>
+          <h3>Понять задачу целиком</h3>
+          <p>Прежде чем писать код — разобраться зачем. Часто правильный вопрос убирает половину работы.</p>
+        </div>
+        <div class="approach__card">
+          <div class="approach__num">02</div>
+          <h3>Итеративно, с результатом</h3>
+          <p>Рабочий прототип -> фидбек -> улучшение. Не держу незаконченные вещи в голове неделями.</p>
+        </div>
+        <div class="approach__card">
+          <div class="approach__num">03</div>
+          <h3>ИИ как ускоритель</h3>
+          <p>Использую OpenAI + Claude для шаблона кода, ревью кода и документации. Это не замена, а скорость.</p>
+        </div>
+        <div class="approach__card">
+          <div class="approach__num">04</div>
+          <h3>Качество кода — норма</h3>
+          <p>TypeScript понятные имена, маленькие функции. Код пишется один раз, а читается многократно.</p>
+        </div>
+      </div>
+
+      <div class="ai-block">
+        <div class="ai-block__icon">⚡</div>
+        <div class="ai-block__content">
+          <h3>ИИ в ежедневной работе</h3>
+          <p>OpenAI использую для обработки большой документации, Claude — для ревью и объяснения сложных концепций. ИИ не заменяет меня в написании кода, а лишь автоматизирует вспомогательные процессы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Кэйсы -->
+  <section class="cases" id="cases">
+    <div class="container">
+      <div class="section-label">03 — Кейсы</div>
+      <h2 class="section-title">Что делал</h2>
+
+      <div class="cases__grid">
+        <article class="case-card">
+          <div class="case-card__num">01</div>
+          <div class="case-card__body">
+            <div class="case-card__tags">
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">NodeJS</span>
+            </div>
+            <h3 class="case-card__title">Сайт‑счётчик до Нового года</h3>
+            <p class="case-card__desc">Выполнил рефакторинг и исправление кода существующего сайта‑счётчика до Нового года. Оптимизировал функционал и улучшил пользовательский интерфейс.</p>
+            <ul class="case-card__points">
+              <li>Исправление ошибок в логике расчёта оставшегося времени</li>
+              <li>Оптимизация производительности: стабилизация FPS при анимации, уменьшение нагрузки</li>
+              <li>Адаптивный дизайн: исправление проблем отображения на мобильных устройствах</li>
+              <li>Улучшение UX: плавность анимаций</li>
+              <li>Рефакторинг JS‑кода для повышения читаемости и поддерживаемости</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-card__num">02</div>
+          <div class="case-card__body">
+            <div class="case-card__tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Telegraf.js</span>
+              <span class="tag">Cheerio / Puppeteer</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <h3 class="case-card__title">Pet‑проект: MarketScanBot</h3>
+            <p class="case-card__desc">Telegram‑бот на Node.js для отслеживания цен и наличия товаров на маркетплейсах (Wildberries, Ozon).</p>
+            <ul class="case-card__points">
+              <li>Парсинг данных с Wildberries и Ozon в реальном времени</li>
+              <li>Извлечение ключевой информации: название товара, текущая цена, скидка, статус наличия</li>
+              <li>Удобный интерфейс взаимодействия через Telegram</li>
+              <li>Хранение истории запросов в SQLite</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-card__num">03</div>
+          <div class="case-card__body">
+            <div class="case-card__tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">SCSS</span>
+            </div>
+            <h3 class="case-card__title">Pet‑проект: TodoList</h3>
+            <p class="case-card__desc">Простое добавление, удаление, редактирование записанных задач.</p>
+            <ul class="case-card__points">
+              <li>Добавление новых задач через поле ввода</li>
+              <li>Редактирование существующих задач кнопкой</li>
+              <li>Удаление задач по кнопке «Удалить»</li>
+              <li>Сохранение списка задач в localStorage</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакт -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">04 — Контакты</div>
+      <h2 class="section-title">Напишите мне</h2>
+
+      <div class="contact__layout">
+        <div class="contact__info">
+          <p class="contact__intro">Открыт к новым проектам и предложениям. Отвечаю в течение дня.</p>
+          <div class="contact__links">
+            <a href="mailto:alex@example.dev" class="contact__link">
+              <span class="contact__link-icon">✉</span>
+              raxit354@gmail.com
+            </a>
+            <a href="https://t.me/Z00nnn" class="contact__link" target="_blank" rel="noopener">
+              <span class="contact__link-icon">✈</span>
+              @Z00nnn
+            </a>
+            <a href="https://github.com/11Aurus11" class="contact__link" target="_blank" rel="noopener">
+              <span class="contact__link-icon">⌥</span>
+              github.com/11Aurus11
+            </a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Имя *</label>
+              <input type="text" id="name" name="name" placeholder="Иван Иванов" autocomplete="name" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="phone">Телефон *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 999 000 00 00" autocomplete="tel" />
+              <span class="form-error" id="phone-error"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" autocomplete="email" />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-field">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Расскажите о проекте или задаче..."></textarea>
+          </div>
+
+          <!-- ИИ помощник -->
+          <div class="ai-helper" id="aiHelper">
+            <button type="button" class="ai-helper__btn" id="aiHelperBtn">
+              <span class="ai-helper__icon">✦</span>
+              Помочь составить сообщение с ИИ
+            </button>
+            <div class="ai-helper__output" id="aiHelperOutput" hidden>
+              <div class="ai-helper__text" id="aiHelperText"></div>
+              <button type="button" class="ai-helper__use" id="aiHelperUse">Вставить в форму</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <span class="btn__text">Отправить</span>
+            <span class="btn__loader" hidden>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" stroke-dasharray="40" stroke-dashoffset="20">
+                  <animateTransform attributeName="transform" type="rotate" from="0 10 10" to="360 10 10" dur="0.8s" repeatCount="indefinite"/>
+                </circle>
+              </svg>
+            </span>
+          </button>
+
+          <div class="form-status" id="formStatus" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__copy">© 2026 Эльдар Рагимов</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/ts/main.js"></script>
+</body>
+</html>

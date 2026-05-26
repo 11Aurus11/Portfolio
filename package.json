@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal developer portfolio",
+  "type": "module",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node dist/backend/server.js",
+    "dev": "tsx watch backend/server.ts",
+    "build:css": "sass frontend/scss/main.scss public/css/main.css --style=compressed",
+    "build:css:watch": "sass frontend/scss/main.scss public/css/main.css --watch",
+    "build:ts": "tsc",
+    "build": "npm run build:css && npm run build:ts && cp frontend/index.html public/index.html"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14",
+    "openai": "^6.39.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.1",
+    "@types/nodemailer": "^8.0.0",
+    "nodemon": "^3.1.4",
+    "sass": "^1.77.6",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3"
+  }
+}
