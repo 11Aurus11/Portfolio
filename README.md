@@ -9,7 +9,7 @@
 | Frontend | HTML5, SCSS (скомпилированный в CSS), Vanilla TypeScript/JS |
 | Backend  | Node.js + Express                                           |
 | Email    | Nodemailer (SMTP)                                           |
-| AI       | Anthropic Claude API (claude-haiku)                         |
+| AI       | OpenRouter API openrouter/free                              |
 
 ---
 
