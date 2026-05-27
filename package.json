@@ -10,7 +10,7 @@
     "build:css": "sass frontend/scss/main.scss public/css/main.css --style=compressed",
     "build:css:watch": "sass frontend/scss/main.scss public/css/main.css --watch",
     "build:ts": "tsc",
-    "build": "npm run build:css && npm run build:ts && cp frontend/index.html public/index.html"
+    "build": "npm run build:css && npm run build:ts"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
