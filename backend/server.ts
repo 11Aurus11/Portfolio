@@ -18,8 +18,8 @@ app.use('/ts', express.static(path.join(PROJECT_ROOT, 'dist/frontend/ts')));
 // Конфиг из переменных окружения
 const PORT = process.env.PORT;
 const OWNER_EMAIL = process.env.OWNER_EMAIL;
-const SMTP_HOST = process.env.SMTP_HOST;
-const SMTP_PORT = Number(process.env.SMTP_PORT);
+const SMTP_HOST = process.env.SMTP_HOST || 'smtp.gmail.com';
+const SMTP_PORT = Number(process.env.SMTP_PORT) || 587;
 const SMTP_USER = process.env.SMTP_USER;
 const SMTP_PASS = process.env.SMTP_PASS;
 const OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
